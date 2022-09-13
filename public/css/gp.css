@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: block;
+}
+
+.container {
+    margin: 0 50px;
+}
+
+.navbar {
+    height: 50px;
+    background-color: #555;
+    border-bottom: 3px solid #000;
+    padding: 0 25px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    padding-top: 3px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover {
+    border-bottom: 3px solid #fff;
+}
+
+legend > h1 {
+    font-size: 1.5em;
+}
+
+fieldset > h2 {
+    margin: 5px 0 0 25px;
+    font-size: 1.2em;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    border: 3px solid #333;
+    border-radius: 3px;
+}
+
+legend {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+input, label {
+    padding: 5px;
+    margin: 2px;
+}
+
+label {
+    grid-column: 1 / 2;
+}
+
+input {
+    grid-column: 2 / 3;
+}
+
+table {
+    width: 90%;
+    margin: 10px auto 0 auto;
+}
+
+.usuarios {
+    display: grid;
+    align-items: center;
+    margin: 5px auto;
+    background-color: #333;
+    height: 100px;
+    width: 90%;
+    border-radius: 50px;
+    padding: 2px;
+    border: 2px solid #111;
+    grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+}
+
+.stats, .foto {
+    height: 95px;
+    width: 95px;
+    border-radius: 50%;
+}
+
+.stats {
+    display: flex;
+    background-color: #fff;
+    margin: 0px 15px;
+    border: 2px solid #000;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.foto {
+    background-image: url("../img/sanji.png");
+    background-repeat: no-repeat;
+    background-size: 95px 95px;
+    background-color: #fff;
+    border: 2px solid #000;
+}
+
+.nome {
+    color: #fff;
+    margin-left: 5px;
+    font-size: 2.5em;
+}
+
+.stat, .statM {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.statM {
+    font-size: 2.5em;
+}

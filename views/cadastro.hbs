@@ -1,0 +1,249 @@
+<h1>Cadastrar</h1>
+<form action="/cad" method="post" autocomplete="off">
+
+  <fieldset>
+
+    <legend><h1>Dados Pessoais</h1></legend>
+
+    <label for="inome">Nome:</label>
+    <input type="text" name="nome" id="inome" placeholder="Ex: Sanji" maxlength="30" /><br />
+
+    <label for="iidade">Idade:</label>
+    <input
+      type="number"
+      name="idade"
+      id="iinome"
+      min="18"
+      placeholder="Min: 18"
+    />
+
+  </fieldset>
+  <br />
+  <fieldset>
+
+    <legend><h1>Critério: Qualificação</h1></legend>
+
+    <h2>Subcritérios:</h2>
+
+    <label for="igrauF">Grau de ensino fundamental I e II :</label>
+    <input
+      type="number"
+      name="grauF"
+      id="igrauF"
+      min="0"
+      max="100"
+      placeholder="Min: 0 Max: 100"
+    /><br />
+
+    <label for="igrauM">Grau de ensino médio :</label>
+    <input
+      type="number"
+      name="grauM"
+      id="igrauM"
+      min="0"
+      max="100"
+      placeholder="Min: 0 Max: 100"
+    /><br />
+
+    <label for="igrauS">Grau de ensino superior :</label>
+    <input
+      type="number"
+      name="grauS"
+      id="igrauS"
+      min="0"
+      max="100"
+      placeholder="Min: 0 Max: 100"
+    /><br />
+
+    <label for="ipreC">Pré-conhecimento :</label>
+    <input
+      type="number"
+      name="preC"
+      id="ipreC"
+      min="0"
+      max="10"
+      placeholder="Min: 0 Max: 10"
+    /><br />
+
+    <label for="iexp">Tempo de experiência com trabalhos semelhantes :</label>
+    <input type="number" name="exp" id="iexp" min="0" placeholder="Min: 0" /><br
+    />
+
+    <label for="ihab">Habilidades necessárias para o trabalho :</label>
+    <input
+      type="number"
+      name="hab"
+      id="ihab"
+      min="0"
+      max="10"
+      placeholder="Min: 0 Max: 10"
+    /><br />
+
+    <label for="ides">Desenvolvimento de habilidades nos últimos 5 anos :</label>
+    <input
+      type="number"
+      name="des"
+      id="ides"
+      min="0"
+      max="10"
+      placeholder="Min: 0 Max: 10"
+    /><br />
+
+  </fieldset>
+  <br />
+  <fieldset>
+
+    <legend><h1>Critério: Trabalho em equipe</h1></legend>
+
+    <h2>Subcritérios:</h2>
+
+    <label for="iMequi">Média estimada quanto ao trabalho em equipe</label>
+    <input
+      type="number"
+      name="Mequi"
+      id="iMequi"
+      min="0"
+      max="5"
+      placeholder="Min: 0 Max: 5"
+    /><br />
+
+    <label for="iMcomp">Média estimada do colaborador quanto ao comportamento</label>
+    <input
+      type="number"
+      name="Mcomp"
+      id="iMcomp"
+      min="0"
+      max="5"
+      placeholder="Min: 0 Max: 5"
+    /><br />
+
+    <label for="iMprod">Média estimada do funcionário quanto a produtividade</label>
+    <input
+      type="number"
+      name="Mprod"
+      id="iMprod"
+      min="0"
+      max="5"
+      placeholder="Min: 0 Max: 5"
+    /><br />
+
+  </fieldset>
+  <br />
+  <fieldset>
+
+    <legend><h1>Critério: Produtividade</h1></legend>
+
+    <h2>Subcritérios:</h2>
+
+    <label for="iRes">Resultados</label>
+    <input
+      type="number"
+      name="Res"
+      id="iRes"
+      min="0"
+      max="100"
+      placeholder="Min: 0 Max: 100"
+    /><br />
+
+    <label for="iMetas">Cumprimento de metas</label>
+    <input
+      type="number"
+      name="Metas"
+      id="iMetas"
+      min="0"
+      max="100"
+      placeholder="Min: 0 Max: 100"
+    /><br />
+
+    <label for="iSatis">Satisfação do cliente</label>
+    <input
+      type="number"
+      name="Satis"
+      id="iSatis"
+      min="0"
+      max="10"
+      placeholder="Min: 0 Max: 10"
+    /><br />
+
+    <label for="iQuali">Qualidade de produção</label>
+    <input
+      type="number"
+      name="Quali"
+      id="iQuali"
+      min="0"
+      max="100"
+      placeholder="Min: 0 Max: 100"
+    /><br />
+
+    <label for="iNdemandas">Número de atrasos da demanda</label>
+    <input
+      type="number"
+      name="Ndemandas"
+      id="iNdemandas"
+      min="0"
+      max="100"
+      placeholder="Min: 0 Max: 100"
+    /><br />
+
+    <label for="iNerros">Número de erros</label>
+    <input
+      type="number"
+      name="Nerros"
+      id="iNerros"
+      min="0"
+      max="100"
+      placeholder="Min: 0 Max: 100"
+    /><br />
+
+    <label for="iNaci">Número de acidentes</label>
+    <input
+      type="number"
+      name="Naci"
+      id="iNaci"
+      min="0"
+      max="100"
+      placeholder="Min: 0 Max: 100"
+    /><br />
+
+  </fieldset>
+  <br />
+  <fieldset>
+
+    <legend><h1>Critério: Disciplina</h1></legend>
+
+    <h2>Subcritérios:</h2>
+
+    <label for="iPresenca">Presença no trabalho</label>
+    <input
+      type="number"
+      name="Presenca"
+      id="iPresenca"
+      min="0"
+      max="100"
+      placeholder="Min: 0 Max: 100"
+    /><br />
+
+    <label for="iNatrasos">Número de atrasos no serviço</label>
+    <input
+      type="number"
+      name="Natrasos"
+      id="iNatrasos"
+      min="0"
+      max="100"
+      placeholder="Min: 0 Max: 100"
+    /><br />
+
+    <label for="iDisciplina">Grau de disciplina</label>
+    <input
+      type="number"
+      name="Disciplina"
+      id="iDisciplina"
+      min="0"
+      max="5"
+      placeholder="Min: 0 Max: 5"
+    /><br />
+
+  </fieldset>
+
+  <input type="submit" value="Enviar" />
+</form>
