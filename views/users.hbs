@@ -20,5 +20,16 @@
       <td class="stats"><p>100%</p></td>
       <td class="stats"><p>100%</p></td>
     </tr>
+  {{#each pessoas}}
+    <tr class="usuarios">
+      <td class="foto"></td>
+      <td class="nome">{{Nome}}</td>
+      <td class="stats"><p>{{Qualificacao}}%</p></td>
+      <td class="stats"><p>{{Tequi}}%</p></td>
+      <td class="stats"><p>{{Produtividade}}%</p></td>
+      <td class="stats"><p>{{DisciplinaTotal}}%</p></td>
+      <td class="stats"><p>{{Total}}%</p></td>
+    </tr>
+  {{/each}}
   </tbody>
 </table>
