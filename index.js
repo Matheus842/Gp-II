@@ -42,8 +42,11 @@ app.get('/users', async (req, res) => {
     if (people.length > 0){
 
         people.forEach(people => {
+
+            var Nome = people.Nome.split(" ", 1)
+
             pessoa.push({
-                Nome: people.Nome,
+                Nome: Nome,
                 Qualificacao: people.Qualificacao,
                 Tequi: people.Tequi,
                 Produtividade: people.Produtividade,
@@ -75,7 +78,7 @@ app.post('/cad', async (req, res) => {
 
     var Produtividade = Math.round(((dados.Res * 1) + (dados.Metas * 1) + (dados.Satis * 10) + (dados.Quali * 1) + (dados.Ndemandas - 100) * -1 + (dados.Nerros - 100) * -1 + (dados.Naci -100)*-1) / 7)
 
-    var DisciplinaTotal = Math.round(((dados.Presenca ) + ((dados.Natrasos - 100) * -1) + ((dados.Disciplina ) * 20)) / 3)
+    var DisciplinaTotal = Math.round(((dados.Presenca * 1) + ((dados.Natrasos - 100) * -1) + ((dados.Disciplina * 1) * 20)) / 3)
 
     var Total = (TotalQuali + TrabalhoEmEquipe + Produtividade + DisciplinaTotal) / 4
 
