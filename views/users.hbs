@@ -12,24 +12,51 @@
   </thead>
   <tbody>
     <tr class="usuarios">
-      <td class="foto"></td>
-      <td class="nome">{{nome}}Sanji</td>
+      <td class="foto Sanji"></td>
+      <td class="nome">Sanji</td>
       <td class="stats"><p>100%</p></td>
+      <td class="stats"><p>90%</p></td>
+      <td class="stats"><p>85%</p></td>
       <td class="stats"><p>100%</p></td>
-      <td class="stats"><p>100%</p></td>
-      <td class="stats"><p>100%</p></td>
-      <td class="stats"><p>100%</p></td>
+      <td class="stats"><p>93,75%</p></td>
     </tr>
-  {{#each pessoas}}
     <tr class="usuarios">
-      <td class="foto"></td>
-      <td class="nome">{{Nome}}</td>
-      <td class="stats"><p>{{Qualificacao}}%</p></td>
-      <td class="stats"><p>{{Tequi}}%</p></td>
-      <td class="stats"><p>{{Produtividade}}%</p></td>
-      <td class="stats"><p>{{DisciplinaTotal}}%</p></td>
-      <td class="stats"><p>{{Total}}%</p></td>
+      <td class="foto Goku"></td>
+      <td class="nome">Goku</td>
+      <td class="stats"><p>40%</p></td>
+      <td class="stats"><p>65%</p></td>
+      <td class="stats"><p>30%</p></td>
+      <td class="stats"><p>35%</p></td>
+      <td class="stats"><p>42,75%</p></td>
     </tr>
-  {{/each}}
+    <tr class="usuarios">
+      <td class="foto Levi"></td>
+      <td class="nome">Levi</td>
+      <td class="stats"><p>90%</p></td>
+      <td class="stats"><p>85%</p></td>
+      <td class="stats"><p>95%</p></td>
+      <td class="stats"><p>100%</p></td>
+      <td class="stats"><p>92,5%</p></td>
+    </tr>
+    <tr class="usuarios">
+      <td class="foto Babidi"></td>
+      <td class="nome">Babidi</td>
+      <td class="stats"><p>100%</p></td>
+      <td class="stats"><p>10%</p></td>
+      <td class="stats"><p>85%</p></td>
+      <td class="stats"><p>30%</p></td>
+      <td class="stats"><p>56,25%</p></td>
+    </tr>
+    {{#each pessoas}}
+      <tr class="usuarios">
+        <td class="foto User"></td>
+        <td class="nome">{{Nome}}</td>
+        <td class="stats"><p>{{Qualificacao}}%</p></td>
+        <td class="stats"><p>{{Tequi}}%</p></td>
+        <td class="stats"><p>{{Produtividade}}%</p></td>
+        <td class="stats"><p>{{DisciplinaTotal}}%</p></td>
+        <td class="stats"><p>{{Total}}%</p></td>
+      </tr>
+    {{/each}}
   </tbody>
 </table>
