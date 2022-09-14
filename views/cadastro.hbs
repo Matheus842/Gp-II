@@ -6,10 +6,18 @@
     <legend><h1>Dados Pessoais</h1></legend>
 
     <label for="inome">Nome:</label>
-    <input type="text" name="nome" id="inome" placeholder="Ex: Sanji" maxlength="30" /><br />
+    <input
+      required
+      type="text"
+      name="nome"
+      id="inome"
+      placeholder="Ex: Sanji"
+      maxlength="30"
+    /><br />
 
     <label for="iidade">Idade:</label>
     <input
+      required
       type="number"
       name="idade"
       id="iinome"
@@ -27,6 +35,7 @@
 
     <label for="igrauF">Grau de ensino fundamental I e II :</label>
     <input
+      required
       type="number"
       name="grauF"
       id="igrauF"
@@ -37,6 +46,7 @@
 
     <label for="igrauM">Grau de ensino médio :</label>
     <input
+      required
       type="number"
       name="grauM"
       id="igrauM"
@@ -47,6 +57,7 @@
 
     <label for="igrauS">Grau de ensino superior :</label>
     <input
+      required
       type="number"
       name="grauS"
       id="igrauS"
@@ -57,6 +68,7 @@
 
     <label for="ipreC">Pré-conhecimento :</label>
     <input
+      required
       type="number"
       name="preC"
       id="ipreC"
@@ -66,11 +78,18 @@
     /><br />
 
     <label for="iexp">Tempo de experiência com trabalhos semelhantes :</label>
-    <input type="number" name="exp" id="iexp" min="0" placeholder="Min: 0" /><br
-    />
+    <input
+      required
+      type="number"
+      name="exp"
+      id="iexp"
+      min="0"
+      placeholder="Min: 0"
+    /><br />
 
     <label for="ihab">Habilidades necessárias para o trabalho :</label>
     <input
+      required
       type="number"
       name="hab"
       id="ihab"
@@ -81,6 +100,7 @@
 
     <label for="ides">Desenvolvimento de habilidades nos últimos 5 anos :</label>
     <input
+      required
       type="number"
       name="des"
       id="ides"
@@ -99,6 +119,7 @@
 
     <label for="iMequi">Média estimada quanto ao trabalho em equipe</label>
     <input
+      required
       type="number"
       name="Mequi"
       id="iMequi"
@@ -109,6 +130,7 @@
 
     <label for="iMcomp">Média estimada do colaborador quanto ao comportamento</label>
     <input
+      required
       type="number"
       name="Mcomp"
       id="iMcomp"
@@ -119,6 +141,7 @@
 
     <label for="iMprod">Média estimada do funcionário quanto a produtividade</label>
     <input
+      required
       type="number"
       name="Mprod"
       id="iMprod"
@@ -137,6 +160,7 @@
 
     <label for="iRes">Resultados</label>
     <input
+      required
       type="number"
       name="Res"
       id="iRes"
@@ -147,6 +171,7 @@
 
     <label for="iMetas">Cumprimento de metas</label>
     <input
+      required
       type="number"
       name="Metas"
       id="iMetas"
@@ -157,6 +182,7 @@
 
     <label for="iSatis">Satisfação do cliente</label>
     <input
+      required
       type="number"
       name="Satis"
       id="iSatis"
@@ -167,6 +193,7 @@
 
     <label for="iQuali">Qualidade de produção</label>
     <input
+      required
       type="number"
       name="Quali"
       id="iQuali"
@@ -177,6 +204,7 @@
 
     <label for="iNdemandas">Número de atrasos da demanda</label>
     <input
+      required
       type="number"
       name="Ndemandas"
       id="iNdemandas"
@@ -187,6 +215,7 @@
 
     <label for="iNerros">Número de erros</label>
     <input
+      required
       type="number"
       name="Nerros"
       id="iNerros"
@@ -197,6 +226,7 @@
 
     <label for="iNaci">Número de acidentes</label>
     <input
+      required
       type="number"
       name="Naci"
       id="iNaci"
@@ -215,6 +245,7 @@
 
     <label for="iPresenca">Presença no trabalho</label>
     <input
+      required
       type="number"
       name="Presenca"
       id="iPresenca"
@@ -225,6 +256,7 @@
 
     <label for="iNatrasos">Número de atrasos no serviço</label>
     <input
+      required
       type="number"
       name="Natrasos"
       id="iNatrasos"
@@ -235,6 +267,7 @@
 
     <label for="iDisciplina">Grau de disciplina</label>
     <input
+      required
       type="number"
       name="Disciplina"
       id="iDisciplina"
@@ -245,5 +278,5 @@
 
   </fieldset>
 
-  <input type="submit" value="Enviar" />
+  <input required type="submit" value="Enviar" />
 </form>
