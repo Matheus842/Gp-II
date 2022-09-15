@@ -99,7 +99,7 @@ table {
     margin: 10px auto 0 auto;
 }
 
-.usuarios {
+.usuarios, .usuario {
     display: grid;
     align-items: center;
     margin: 5px auto;
@@ -125,7 +125,7 @@ table {
     border: 2px solid #000;
     align-items: center;
     justify-content: center;
-    font-size: 1.7em;
+    font-size: 1.6em;
     font-weight: bold;
 }
 
@@ -134,6 +134,30 @@ table {
     background-size: 95px 95px;
     background-color: #fff;
     border: 2px solid #000;
+    background-size: cover;
+}
+
+.foto > a {
+    display: block;
+}
+
+.fotoM {
+    height: 150px;
+    width: 150px;
+}
+
+.user {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.centro {
+    margin: 15px auto;
+}
+
+.user p {
+    font-size: 1.5em;
 }
 
 .Sanji {
@@ -152,7 +176,7 @@ table {
     background-image: url("../img/babidi.png");
 }
 
-.User {
+.User, .fotoM {
     background-image: url("../img/User.png");
 }
 
@@ -171,4 +195,28 @@ table {
 
 .statM {
     font-size: 2.5em;
+}
+
+.transparent {
+    background: none;
+    border: none;
+}
+
+.usuario {
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    
+}
+
+thead > .usuario {
+    border-radius: 75px 75px 0 0;
+    margin-bottom: 0;
+}
+
+tbody > .usuario {
+    border-radius: 0 0 75px 75px;
+    margin-top: 0;
+}
+
+.statsU {
+    font-size: 1.1em;
 }

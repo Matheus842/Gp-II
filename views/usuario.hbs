@@ -1,0 +1,24 @@
+<div class="user">
+  <div class="fotoM foto centro"></div>
+  <p>Nome: {{pessoa.Nome}}</p>
+  <p>Idade: {{pessoa.idade}}</p>
+
+  <table class="tabela">
+    <thead>
+      <tr class="usuario">
+        <th class="stat">Qualificação</th>
+        <th class="stat">Trabalho em equipe</th>
+        <th class="stat">Produtividade</th>
+        <th class="stat">Disciplina</th>
+        <th class="statM">Total</th>
+      </tr>
+    </thead>
+    <tr class="usuario">
+      <td class="stats statsU"><p>{{pessoa.Qualificacao}}%</p></td>
+      <td class="stats statsU"><p>{{pessoa.Tequi}}%</p></td>
+      <td class="stats statsU"><p>{{pessoa.Produtividade}}%</p></td>
+      <td class="stats statsU"><p>{{pessoa.DisciplinaTotal}}%</p></td>
+      <td class="stats statsU"><p>{{pessoa.Total}}%</p></td>
+    </tr>
+  </table>
+</div>

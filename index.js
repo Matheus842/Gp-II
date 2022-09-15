@@ -7,6 +7,7 @@ const PORT = process.env.PORT
 const Person = require('./models/Person.js')
 const session = require('express-session')
 const { default: mongoose } = require('mongoose')
+const Usuarios = require('./routes/Usuario.js')
 
 app.engine('hbs', hbs.engine({
     extname: 'hbs',
@@ -22,6 +23,8 @@ app.use(session({
     resave: false,
     saveUninitialized: true
 }))
+
+app.use('/usuario', Usuarios)
 
 app.get('/', (req, res) => {
     res.render('home')
@@ -51,7 +54,8 @@ app.get('/users', async (req, res) => {
                 Tequi: people.Tequi,
                 Produtividade: people.Produtividade,
                 DisciplinaTotal: people.DisciplinaTotal,
-                Total: people.Total
+                Total: people.Total,
+                id: people._id
             })
         });
 
